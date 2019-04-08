@@ -244,7 +244,7 @@ RUN apt-get update \
     && pip --no-cache-dir install -r /engine/platform-sdk/requirements.txt \
     && pip --no-cache-dir install -r /engine/platform-sdk/eta/requirements.txt \
     && pip --no-cache-dir install -e /engine/platform-sdk/. \
-    && pip --no-cache-dir install -e /engine/platform-sdk/eta/.
+    && pip --no-cache-dir install -e /engine/platform-sdk/eta/. \
     && pip --no-cache-dir install opencv-python-headless \
     && pip --no-cache-dir install --upgrade requests \
     && pip --no-cache-dir install -I tensorflow-gpu==1.12.0 \
